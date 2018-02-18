@@ -1,0 +1,282 @@
+/* basic styling
+------------------------------------------------------------------ */
+
+/* icon colors */
+
+.clr-1 {
+	fill: #000;
+}
+.clr-2 {
+	fill: #fff;
+}
+.clr-trans {
+	fill: transparent;
+}
+
+/* icon display and animation settings */
+
+.icon {
+	display: inline-flex;
+	align-self: center;
+	vertical-align: middle;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* animations */
+
+#terminal #line {
+	-webkit-animation: blink .7s linear infinite;
+	-moz-animation: blink .7s linear infinite;
+	-o-animation: blink .7s linear infinite;
+	animation: blink .7s linear infinite;
+	animation-fill-mode: both;
+}
+
+#smiley #eye-left {
+	-webkit-animation: wink 1s linear infinite;
+	-moz-animation: wink 1s linear infinite;
+	-o-animation: wink 1s linear infinite;
+	animation: wink 1s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transform-box:fill-box;
+	-moz-transform-box:fill-box;
+	-o-transform-box:fill-box;
+	transform-box:fill-box;
+}
+
+#chat #ellipse1,
+#chat #ellipse2,
+#chat #ellipse3 {
+	-webkit-animation: blink 1.4s linear infinite;
+	-moz-animation: blink 1.4s linear infinite;
+	-o-animation: blink 1.4s linear infinite;
+	animation: blink 1.4s linear infinite;
+	animation-fill-mode: both;
+}
+
+#chat #ellipse2 { 
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+#chat #ellipse3 { 
+	-webkit-animation-delay: .4s; 
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+#gear #cogwheel {
+	-webkit-animation: spin 6s linear infinite;
+	-moz-animation: spin 6s linear infinite;
+	-o-animation: spin 6s linear infinite;
+	animation: spin 6s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transform-box:fill-box;
+	-moz-transform-box:fill-box;
+	-o-transform-box:fill-box;
+	transform-box:fill-box;
+}
+
+#clock #hand-big-group {
+	-webkit-animation: spin-back .5s linear infinite;
+	-moz-animation: spin-back .5s linear infinite;
+	-o-animation: spin-back .5s linear infinite;
+	animation: spin-back .5s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+#clock #hand-small-group {
+	-webkit-animation: spin-back 12s linear infinite;
+	-moz-animation: spin-back 12s linear infinite;
+	-o-animation: spin-back 12s linear infinite;
+	animation: spin-back 12s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+#bike #wheel-back,
+#bike #wheel-front {
+	-webkit-animation: spin 1s linear infinite;
+	-moz-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transform-box:fill-box;
+	-moz-transform-box:fill-box;
+	-o-transform-box:fill-box;
+	transform-box:fill-box;
+}
+
+#lab #liquid {
+	-webkit-animation: scale 1s linear infinite;
+	-moz-animation: scale 1s linear infinite;
+	-o-animation: scale 1s linear infinite;
+	animation: scale 1s linear infinite;
+	animation-fill-mode: both;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform-box:fill-box;
+	-moz-transform-box:fill-box;
+	-o-transform-box:fill-box;
+	transform-box:fill-box;	
+}
+
+/* animation keyframes
+------------------------------------------------------------------ */
+
+/* blink */
+
+@-webkit-keyframes blink {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+@-moz-keyframes blink {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+@-o-keyframes blink {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+@keyframes blink {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+/* spin (clockwise) */
+
+@-webkit-keyframes spin {
+	100% { -webkit-transform: rotate(360deg);}
+	100% { transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+	100% { -moz-transform: rotate(360deg);}
+	100% { transform: rotate(360deg);}
+}
+
+@-o-keyframes spin {
+	100% { -o-transform: rotate(360deg);}
+	100% { transform: rotate(360deg);}
+}
+
+@keyframes spin {
+	100% { transform: rotate(360deg);}
+}
+
+/* spin (anticlockwise) */
+
+@-webkit-keyframes spin-back {
+	100% { -webkit-transform: rotate(-360deg);}
+	100% { transform: rotate(-360deg);}
+}
+
+@-moz-keyframes spin-back {
+	100% { -moz-transform: rotate(-360deg);}
+	100% { transform: rotate(-360deg);}  
+}
+
+@-o-keyframes spin-back {
+	100% { -o-transform: rotate(-360deg);}
+	100% { transform: rotate(-360deg);}
+}
+
+@keyframes spin-back {
+	100% { transform: rotate(-360deg);}
+}
+
+/* scale */
+
+@-webkit-keyframes scale {
+	0% { -webkit-transform: scale(1.1, 0.8);}
+	50% { -webkit-transform: scale(1, 1);}
+	100% { -webkit-transform: scale(1.1, 0.8);}
+	0% { transform: scale(1.1, 0.8);}
+	50% { transform: scale(1, 1);}
+	100% { transform: scale(1.1, 0.8);}
+}
+
+@-moz-keyframes scale {
+	0% { -moz-transform: scale(1.1, 0.8);}
+	50% { -moz-transform: scale(1, 1);}
+	100% { -moz-transform: scale(1.1, 0.8);}
+	0% { transform: scale(1.1, 0.8);}
+	50% { transform: scale(1, 1);}
+	100% { transform: scale(1.1, 0.8);}
+}
+
+@-o-keyframes scale {
+	0% { -o-transform: scale(1.1, 0.8);}
+	50% { -o-transform: scale(1, 1);}
+	100% { -o-transform: scale(1.1, 0.8);}
+	0% { transform: scale(1.1, 0.8);}
+	50% { transform: scale(1, 1);}
+	100% { transform: scale(1.1, 0.8);}
+}
+
+@keyframes scale {
+	0% { transform: scale(1.1, 0.8);}
+	50% { transform: scale(1, 1);}
+	100% { transform: scale(1.1, 0.8);}
+}
+
+/* wink */
+
+@-webkit-keyframes wink {
+	0% { -webkit-transform: scale(1,.125);}
+	20% { -webkit-transform: scale(1,1);}
+	0% { transform: scale(1,.125);}
+	20% { transform: scale(1,1);}
+}
+
+@-moz-keyframes wink {
+	0% { -moz-transform: scale(1,.125);}
+	20% { -moz-transform: scale(1,1);}
+	0% { transform: scale(1,.125);}
+	20% { transform: scale(1,1);}
+}
+
+@-o-keyframes wink {
+	0% { -o-transform: scale(1,.125);}
+	20% { -o-transform: scale(1,1);}
+	0% { transform: scale(1,.125);}
+	20% { transform: scale(1,1);}
+}
+
+@keyframes wink {
+	0% { transform: scale(1,.125);}
+	20% { transform: scale(1,1);}
+}

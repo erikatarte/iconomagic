@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/css" href="iconomagic.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="terminal" class="icon" viewBox="0 0 100 100">
+	<title>terminal</title>
+	<defs>
+		<style>
+			<![CDATA[
+			/* your styles go here */
+			]]>
+		</style>
+	</defs>
+	<rect id="line" class="clr-1" x="35" y="77" width="60" height="8"/>
+	<polygon id="carrot" class="clr-1" points="1.05 29.66 24.39 53 1.05 76.33 6 81.28 34.28 53 6 24.72 1.05 29.66"/>
+</svg>

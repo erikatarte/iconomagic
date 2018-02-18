@@ -1,0 +1,15 @@
+<?xml-stylesheet type="text/css" href="iconomagic.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="smiley" class="icon" viewBox="0 0 100 100">
+	<title>smiley</title>
+	<defs>
+		<style>
+			<![CDATA[
+			/* your styles go here */
+			]]>
+		</style>
+	</defs>
+	<circle id="outline" class="clr-1" cx="50" cy="50" r="42"/>
+	<path id="mouth" class="clr-2" d="M50,78.41c-12.14,0-23.41-6.2-28.73-15.8a3.5,3.5,0,1,1,6.12-3.39c4.1,7.41,13,12.2,22.61,12.2s18.5-4.79,22.61-12.2a3.5,3.5,0,0,1,6.12,3.4C73.4,72.21,62.12,78.41,50,78.41Z"/>
+	<circle id="eye-left" class="clr-2" cx="36" cy="36" r="6"/>
+	<circle id="eye-right" class="clr-2" cx="64" cy="36" r="6"/>
+</svg>

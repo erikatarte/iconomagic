@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/css" href="iconomagic.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="lab" class="icon" viewBox="0 0 100 100">
+	<title>lab</title>
+	<defs>
+		<style>
+			<![CDATA[
+			/* your styles go here */
+			]]>
+		</style>
+	</defs>
+	<path id="beaker" class="clr-1" d="M78.27,58.61,61.94,34.78V14H69V6H31v8h7.06V34.78l-17.16,25-19.15,28L5,93.94H95l3.25-6.17ZM12.48,86.06l2.06-3h0l31.4-45.83V14h8.12V37.22L85.47,83.06h0l2.06,3Z"/>
+	<polygon id="liquid" class="clr-1" points="8.72 88 28.59 59 71.41 59 91.28 88 8.72 88" />
+</svg>
